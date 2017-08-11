@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="lowKeyBackground" stylesheets="@lg.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainViewController">
+    <children>
+        <SplitPane dividerPositions="0.7117794486215538" layoutX="356.0" layoutY="265.0" prefHeight="535.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="265.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="493.0" prefWidth="550.0" styleClass="highKeyBackground">
+                    <children>
+                        <VBox layoutX="9.0" layoutY="14.0" spacing="14.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+                            <children>
+                                <VBox spacing="14.0">
+                                    <children>
+                                        <HBox spacing="14.0">
+                                            <children>
+                                                <Label styleClass="headlinesLarge" text="%key.questionLabel" />
+                                                <Label fx:id="insertLanguage" styleClass="headlinesColored" text="Sprache" />
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="questionField" alignment="TOP_LEFT" prefHeight="200.0" prefWidth="544.0" styleClass="question" text="Show Question from Server" VBox.vgrow="ALWAYS" />
+                                    </children>
+                                </VBox>
+                                <VBox spacing="14.0">
+                                    <children>
+                                        <Label styleClass="headlines" text="%key.labelAnswer" />
+                                        <TextArea fx:id="answerField" prefHeight="200.0" prefWidth="544.0" VBox.vgrow="ALWAYS" />
+                                        <Button fx:id="sendAnswer" mnemonicParsing="false" onAction="#sendAnswer" styleClass="buttonStileBlue" text="%key.sendAnswer" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="493.0" prefWidth="250.0" styleClass="highKeyBackground" SplitPane.resizableWithParent="false">
+                    <children>
+                        <TableView fx:id="tableOfOpponents" editable="true" layoutY="43.0" prefHeight="450.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+                            <columns>
+                                <TableColumn fx:id="opponentName" prefWidth="160.0" resizable="true" text="%key.opponentName" />
+                                <TableColumn fx:id="opponentPoints" prefWidth="90.0" resizable="true" text="%key.opponentPoints" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="14.0" styleClass="headlines" text="%key.labelOpponentTable" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <HBox layoutX="11.0" layoutY="150.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+            <children>
+                <VBox prefHeight="95.0" prefWidth="552.0" spacing="14.0">
+                    <children>
+                        <Label styleClass="headlinesWhite" text="%key.labelConnectionData" VBox.vgrow="ALWAYS" />
+                        <TextField fx:id="nickname" prefHeight="25.0" prefWidth="536.0" promptText="%key.enterNickname" VBox.vgrow="ALWAYS" />
+                        <HBox spacing="14.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <TextField fx:id="ipAddress" prefHeight="25.0" prefWidth="178.0" promptText="%key.enterIPAddress" HBox.hgrow="ALWAYS" />
+                                <TextField fx:id="port" prefHeight="25.0" prefWidth="101.0" promptText="%key.enterPortNumber" HBox.hgrow="ALWAYS" />
+                                <Button fx:id="buttonEnterGame" mnemonicParsing="false" onAction="#enterGame" styleClass="buttonStileGreen" text="%key.enterGame" />
+                                <Button fx:id="buttonLeaveGame" mnemonicParsing="false" onAction="#leaveGame" styleClass="buttonStileRed" text="%key.buttonLeaveGame" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="95.0" prefWidth="217.0" spacing="14.0">
+                    <children>
+                        <Label styleClass="headlinesWhite" text="%key.serverData" />
+                        <Label fx:id="serverData" styleClass="textWhite" text="Server-Data" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Label layoutX="14.0" layoutY="14.0" styleClass="headlineOfGameBottom" text="Who's Got It First?" />
+        <Label layoutX="14.0" layoutY="14.0" styleClass="headlineOfGame" text="Who's Got It First?" />
+    </children>
+</AnchorPane>

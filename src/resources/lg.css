@@ -1,0 +1,209 @@
+.buttonStileRed {
+    -fx-background-color:
+            linear-gradient(#FFD4D4, #FFB5B5),
+            radial-gradient(center 50% -40%, radius 200%, #E63E3E 45%, #C70000 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.buttonStileRed:hover {
+    -fx-background-color:
+            linear-gradient(#FFC7C7, #FF9191),
+            radial-gradient(center 50% -40%, radius 200%, #FF5757 45%, #FF0000 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.buttonStileRed:pressed {
+    -fx-background-color:
+            linear-gradient(#FFD4D4, #FFB5B5),
+            radial-gradient(center 50% -40%, radius 200%, #B83333 45%, #870000 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.buttonStileGreen {
+    -fx-background-color:
+            linear-gradient(#f0ff35, #a9ff00),
+            radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-weight: bold;
+}
+
+.buttonStileGreen:hover {
+    -fx-background-color:
+            linear-gradient(#F8FFA6, #DDFF99),
+            radial-gradient(center 50% -40%, radius 200%, #F8FFA6 45%, #B6FF26 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-weight: bold;
+}
+
+.buttonStileGreen:pressed {
+    -fx-background-color:
+            linear-gradient(#ACB078, #97AD6C),
+            radial-gradient(center 50% -40%, radius 200%, #8CB52A 45%, #5A8C01 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-weight: bold;
+}
+
+.buttonStileGreen:disabled {
+    -fx-background-color:
+            linear-gradient(#DEDEDE, #C4C4C4),
+            radial-gradient(center 50% -40%, radius 200%, #B3B3B3 45%, #7C7D7D 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-weight: bold;
+}
+
+.buttonStileOrange {
+    -fx-background-color:
+            linear-gradient(#FCE5C5, #FFD496),
+            radial-gradient(center 50% -40%, radius 200%, #FFB854 45%, #FF9500 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-weight: bold;
+}
+
+.buttonStileBlue {
+    -fx-background-color:
+            linear-gradient(#C0E5FC, #77C9FC),
+            radial-gradient(center 50% -40%, radius 200%, #4AC0FF 45%, #007CBF 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.buttonStileBlue:hover {
+    -fx-background-color:
+            linear-gradient(#C0E5FC, #77C9FC),
+            radial-gradient(center 50% -40%, radius 200%, #9EDDFF 45%, #1CAFFF 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.buttonStileBlue:pressed {
+    -fx-background-color:
+            linear-gradient(#8FAABA, #5995BA),
+            radial-gradient(center 50% -40%, radius 200%, #3585B0 45%, #005685 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.buttonStileBlue:disabled {
+    -fx-background-color:
+            linear-gradient(#DEDEDE, #C4C4C4),
+            radial-gradient(center 50% -40%, radius 200%, #B3B3B3 45%, #7C7D7D 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-weight: bold;
+}
+
+.headlines {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+.headlinesLarge {
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+.headlinesColored {
+    -fx-text-fill: #FF9500;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 20;
+}
+
+.headlineOfGame {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 70;
+    -fx-text-fill: linear-gradient(#ffd65b, #e68400),
+    linear-gradient(#ffef84, #f2ba44),
+    linear-gradient(#ffea6a, #efaa22),
+    linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+    linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.4) , 2, 0.5 , 0.5 , 1);
+}
+
+.headlineOfGameBottom {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 70;
+    -fx-text-fill: rgba(0,0,0,0.4);
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.9) , 30, 0.0 , 0 , 0 );
+}
+
+.headlinesWhite {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+}
+
+.textWhite {
+    -fx-text-fill: white;
+    -fx-font-size: 11;
+}
+
+.question {
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    -fx-text-fill: #007CBF;
+}
+
+.lowKeyBackground {
+    -fx-background-color: #007CBF;
+}
+
+.highKeyBackground {
+    -fx-background-color: #C0E5FC;
+}
+
+.text-field:hover {
+    -fx-background-color: #ffd65b;
+}
+
+.text-field:focused {
+    -fx-background-color: #ffd65b;
+}
+
+.text-area:hover {
+    -fx-background-color: #ffd65b;
+}
+
+.text-area:focused {
+    -fx-background-color: #ffd65b;
+}
